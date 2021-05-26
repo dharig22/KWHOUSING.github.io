@@ -1,7 +1,8 @@
 body{
     background-color: #8AA8BD
+    border: 2px solid powderblue;
 }
 
 .Title{
-    font-size: 3rem;
+    font-size: 3rem;  
 }
