@@ -2,32 +2,270 @@
 <html lang="en">
 <html>
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>CP317 Documentation</title>
     </head>
 
-    <body>
-        <h2 class="Title">
-            KW Housing Software - Requirements Specifications
-        </h1>
+    <h1 class="Title">
+        <span ><img src="./Images/logo.png" class="logo"></span>
+        KW Housing Software
+    </h1>
+    <h2 class="Subtitles">
+        - Requirements Specifications -
+    </h2>
 
-        <h2 class="Subtitles">
+    <main>
+        <div>
+
+        <section id="1">
+            <h2 class="Subheadings">
             Introduction
-        </h2>
+            </h2>
+        </section>
 
-        <h2 class="Subtitles">
-            Overall Description
-        </h2>
-
-        <h2 class="Subtitles">
-            Technical Requirements
-        </h2>
-
-        <h2 class="Subtitles">
-            Interface Requirements
-        </h2>
+        <section id="1.1">
+            <h3 class="Sections">1.1 Summary</h3>
+            <p class="Text">
+                KWHousing is a Kitchener and Waterloo based website created to make finding and subletting apartments 
+                easier and more accessible to all users. The user will need to create an account in order to list postings and 
+                interact with other users using the chat feature of the website. The user will be greeted with a bot (filters) 
+                that will narrow down the search and categorize whether the user is a buyer or seller. Once that occurs it 
+                will lead them to their desired destination depending on if they are a buyer or seller there will be different 
+                interfaces as such. The site will use google maps API and GPS to find locations in Kitchener and 
+                Waterloo based on the user’s needs.
+            </p>
+        </section>
         
-    <body>
+        <section id="1.2">
+            <h3 class="Sections">1.2 Purpose of this Document</h3>
+            <p class="Text">
+                The requirements document will cover the basic and informal necessities of the KWHousing website. This document will 
+                answer and describe all the features of the website, how they are implemented, how the website works, and will also 
+                be used as a documentation site for the project team members. The audience of this site is the instructor of this 
+                course and the project team. This is the first document made for the KWHousing website and thus all specifics and requirements
+                will be listed here.
+            </p>
+        </section>
+
+        <section id="1.3">
+            <h3 class="Sections">1.3 Scope</h3>
+            <p class="Text">
+                This document outlines the functionality, constraints and specifications of the kwhousing website which will help users find and sublet 
+                their apartments in a more accessible way. There will be two different interfaces that will help users to either buy or sell an apartment. 
+                Currently the website is only available for the KW area but with a future plan of expanding to all the cities of Ontario.
+            </p>
+        </section>
+
+        <section id="1.4">
+            <h3 class="Sections">1.4 Business Model</h3>
+            <p class="Text">
+                The KWHousing website is a site in which all housing needs will be fulfilled from finding a sublet to finding your dream apartment. 
+                The website will be made free of cost thus there will be an optimal website for users to interact with and use. It will be easy to use 
+                and is something that will help many students in need. Once this site is up and running it will make a difficult process easier to deal with. 
+                The growth of the website and users depends on reliable users and word of mouth. Once the results of successful leases start to 
+                spread there will be an increase of users and thus allows the project team to make new changes as they come along. Creating new features 
+                and even adding a membership option for more functionality in the website for users. Research and development will be put into this website 
+                to ensure customer satisfaction and growth occurs.
+            </p>
+        </section>
+
+        <section id="1.5">
+            <h3 class="Sections">1.5 Definitions and Frequently Used Phrases</h3>
+            <h4 class="List-Subtitle">Definitions</h4>
+            <ul class="Definition-List">
+                <li>Chat – Communication using messages within the application between users</li>
+                <li>Interface - A program or device that is able to interact and communicate with users</li>
+                <li>Filters – used to narrow down input from the user and lead them to their desired interface</li>
+            </ul>
+
+            <h4 class="List-Subtitle">Frequently Used Phrases</h4>
+            <ul class="Phrase-List">
+                <li>CSS - Cascading Style Sheets (idk we can keep it thought it might be useful)</li>
+                <li>HTML - The HyperText Markup Language (same for this)</li>
+                <li>SPMP - Software Project Management Plan</li>
+                <li>API - Application Programming Interface</li>
+                <li>GPS - Global Positioning System</li>
+                <li>GUI - Graphical User Interface</li>
+            </ul>
+        </section>
+
+        <section id="2">
+            <h2 class="Subheadings">
+                Overall Description
+            </h2>
+        </section>
+
+        <section id="2.1">
+            <h3 class="Sections">2.1 Product Perspective</h3>
+            <p class="Text">
+                KWhousing is a website created using Javascript, HTML, and CSS with Firebase as the 
+                backend to provide location based personalised information/suggestions for renting and subletting.
+            </p>
+        </section>
+
+        <section id="2.1.1">
+            <h3 class="Sections">2.1.1 Sample GUI</h3>
+            <h3 class="GUI">Landing Page</h3>
+            <img src="./Images/Landing-Page.svg" alt="">
+            <h3 class="GUI">Login Page</h3>
+            <img src="./Images/Login-Page.png" alt="">
+            <h3 class="GUI">Contact Page</h3>
+            <img src="./Images/Contact-Page.png" alt="">
+            <h3 class="GUI">Buyer Page</h3>
+            <img src="./Images/Buyer-Page.png" alt="">
+            <h3 class="GUI">Seller Page</h3>
+            <img src="./Images/Seller-Page.png" alt="">
+            <h3 class="GUI">Alternate Seller Page</h3>
+            <img src="./Images/Alt-Seller-Page.png" alt="">
+        </section>
+
+        <section id="2.2">
+            <h3 class="Sections">2.2 Product Functions</h3>
+            <p class="Text">
+                KWhousing is a website that makes it easier for students and others in a location to share information 
+                specific to subletting or lease takeovers. Each user has a profile and can select filters to view appropriate postings. 
+                There are multiple filters such as: Range of location, price range, and etc.
+            </p>
+        </section>
+
+        <section id="2.3">
+            <h3 class="Sections">2.3 User Characteristics</h3>
+            <p class="Text">
+                The target audience for KWhousing is students and tenants looking to connect with others in the Waterloo and Kitchener area.
+                It also helps tenants to find accommodation in their desired area and in their budget by using a filter option. To use the basic
+                functions of the devices on which KWhousing is installed, users must have technical knowledge. Previous experience with a messaging 
+                app like Facebook Messenger or Instagram chatting option will help reduce the amount of time it takes to become familiar with it. The user 
+                interface is designed to be simple and intuitive so that users can operate and navigate the application with less difficulty.
+            </p>
+        </section>
+
+        <section id="2.4">
+            <h3 class="Sections">2.4 Assumptions and Dependencies</h3>
+            <p class="Text">
+                It is assumed that the application would be user- friendly. Users would be able to share pictures and videos of their houses along with 
+                the list of facilities. 
+                Limitation would be that the  application will only be useful for people finding an accommodation in Waterloo and Kitchener area and not 
+                for people from Waterloo and Kitchener finding an accommodation elsewhere.  (They can just chat and cannot call which may end up with some 
+                miscommunication sometimes).  
+            </p>
+        </section>
+
+        <section id="3">
+            <h2 class="Subheadings">
+                Technical Requirements
+            </h2>
+        </section>
+
+        <section id="3.1">
+            <h3 class="Sections">3.1 Software Interfaces</h3>
+            <p class="Text">
+                The system operates on major browsers such as Internet Explorer, Chrome, Google, Safari, Bing, ETC
+                There is a firebase database that will be used to collect information on where listings are available. 
+            </p> 
+        </section>
+
+        <section id="3.2">
+            <h3 class="Sections">3.2 Security</h3>
+            <p class="Text">
+                There will be a terms and conditions section in which the users will accept the community guidelines to use the website.
+                There will also be a feature in which users will be able to report content that goes against community guidelines.
+            </p>
+        </section>
+
+        <section id="3.3">
+            <h3 class="Sections">3.3 Portability</h3>
+            <p class="Text">
+                KWHousing is a website and will be supported on all platforms – mobile phones, PC’s, and laptops.
+            </p>
+        </section>
+
+        <section id="4">
+            <h2 class="Subheadings">
+                Interface Requirements
+            </h2>
+        </section>
+
+        <section id="4.1">
+            <h3 class="Sections">4.1 Description</h3>
+            <p class="Text">The website interface is compatible with different browsers and works on PC and mobile devices. </p>
+        </section>
+
+        <section id="4.2">
+            <h3 class="Sections">4.2 Specifics</h3>
+            <p class="Text">The specifics of the GUI and the languages used for the website and Application are in the Design Specs Document. </p>
+        </section>
+
+        <section id="5">
+            <h2 class="Subheadings">
+                Versions
+            </h2>
+            <p class="Text">Version 0.1 21/05/2021 Document outline created</p>
+        </section>
+
+        <section id="6">
+            <h2 class="Subheadings">
+                Authored By
+            </h2>
+            <p class="Text">
+                Alvin Onabolu<br>
+                Aryan Hiren Amin<br>
+                Chaitanya Bhavsar<br>
+                Devarsh Patwa<br>
+                Dhari Gandhi<br>
+                Esha Panchal<br>
+                Homa Varmora<br>
+                Mahek Shah<br>
+                Ronak Arora<br>
+                Shasan Jain<br>
+                Vaibhav Patel<br>
+                William Mabia<br>
+            </p>
+        </section>
+        </div>
+        <nav class="section-nav">
+            <ul class="toc_list">
+                <li>
+                    <a href="#1">1.0 Introduction</a>
+                    <ul>
+                        <li><a href="#1.1">1.1 Summary</a></li>
+                        <li><a href="#1.2">1.2 Purpose</a></li>
+                        <li><a href="#1.3">1.3 Scope</a></li>
+                        <li><a href="#1.4">1.4 Busimess Model</a></li>
+                        <li><a href="#1.5">1.5 Definitions/Frequently Used Phrases</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#2">2.0 Overall Description</a>
+                    <ul>
+                        <li><a href="#2.1">2.1 Product Perspective</a></li>
+                            <ul>
+                                <li><a href="#2.1.1">2.1.1 Sample GUI</a></li>
+                            </ul>
+                        <li><a href="#2.2">2.2 Product Functions</a></li>
+                        <li><a href="#2.3">2.3 User Characteristics</a></li>
+                        <li><a href="#2.4">2.4 Assumptions and dependencies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#3">3.0 Technical Requirements</a>
+                    <ul>
+                        <li><a href="#3.1">3.1 Software Interfaces</a></li>
+                        <li><a href="#3.2">3.2 Security</a></li>
+                        <li><a href="#3.3">3.3 Portability</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#4">4.0 Interface Requirements</a>
+                    <ul>
+                        <li><a href="#4.1">4.1 Description</a></li>
+                        <li><a href="#4.2">4.2 Specifics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#5">5.0 Versions</a></li>
+                <li><a href="#6">6.0 Authered By</a></li>
+            </ul>
+        </nav>
+      </main>
+    </html>
